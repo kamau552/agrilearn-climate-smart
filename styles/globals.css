@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  transition: smooth 0.3s all ease-in-out;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+}
+
+.high-contrast body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .bg-white {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+
+.high-contrast .text-gray-700,
+.high-contrast .text-gray-600,
+.high-contrast .text-gray-500 {
+  color: #ffffff !important;
+}
+
+.high-contrast .border {
+  border-color: #ffff00 !important;
+}
+
+.high-contrast button:not(.bg-green-600) {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
+}
+
+.high-contrast input {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #ffff00 !important;
+}
