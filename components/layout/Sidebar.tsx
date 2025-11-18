@@ -9,7 +9,7 @@ import {
   RiUserHeartLine, RiRobot2Line, RiUserLine
 } from "react-icons/ri";
 import { TbPlant2, TbDroplet, TbCloud } from "react-icons/tb";
-import { GiCow } from "react-icons/gi";
+import { GiCow, GiFruitTree } from "react-icons/gi";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 
 // Split menu items into main items and user items
@@ -17,10 +17,10 @@ const mainMenuItems = [
   { name: "Home", icon: <RiHome5Line />, path: "/" },
   { name: "Crops", icon: <TbPlant2 />, path: "/crops" },
   { name: "Livestock", icon: <GiCow />, path: "/livestock" },
-  { name: "Fruits", icon: <TbCloud />, path: "/fruits" },
+  { name: "Fruits", icon: <GiFruitTree />, path: "/fruits" },
   { name: "Farm Practices", icon: <RiBook2Line />, path: "/farm-practices" },
   { name: "Climate Tips", icon: <TbCloud />, path: "/climate-tips", badge: "NEW", badgeColor: "bg-green-500" },
-  { name: "Water & Soil", icon: <TbDroplet />, path: "/water-soil" },
+  { name: "Crops Climate", icon: <TbDroplet />, path: "/crops-climate" },
   { name: "Vet Support", icon: <RiUserHeartLine />, path: "/vet-support" },
   { name: "AI Assistant", icon: <RiRobot2Line />, path: "/ai-assistant", badge: "AI", badgeColor: "bg-purple-600" },
 ];

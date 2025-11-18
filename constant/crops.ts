@@ -5,7 +5,6 @@ export interface Crop {
   localName: string;
   scientificName: string;
   image?: string;
-  emoji: string;
   category: "cereal" | "legume" | "vegetable" | "tuber" | "cash-crop";
   description: string;
   climateBadges: string[];
@@ -28,7 +27,6 @@ export const crops: Crop[] = [
     name: "Maize",
     localName: "Mahindi",
     scientificName: "Zea mays",
-    emoji: "🌽",
     image: "/assets/images/crops/maize.png",
     category: "cereal",
     description: "Staple food crop in Kenya. Drought-resistant varieties available for different regions.",
@@ -70,7 +68,6 @@ export const crops: Crop[] = [
     name: "Rice",
     localName: "Mchele",
     scientificName: "Oryza sativa",
-    emoji: "🌾",
     image: "/assets/images/crops/rice.png",
     category: "cereal",
     description: "Important cereal crop growing in irrigated lowlands. High demand in Kenyan markets.",
@@ -114,7 +111,6 @@ export const crops: Crop[] = [
     name: "Tomato",
     localName: "Nyanya",
     scientificName: "Solanum lycopersicum",
-    emoji: "🍅",
     image: "/assets/images/crops/tomato.png",
     category: "vegetable",
     description: "High-value vegetable crop. Suitable for both greenhouse and open field production.",
@@ -157,7 +153,6 @@ export const crops: Crop[] = [
     name: "Cabbage",
     localName: "Kabichi",
     scientificName: "Brassica oleracea var. capitata",
-    emoji: "🥬",
     image: "/assets/images/crops/cabbage.png",
     category: "vegetable",
     description: "Popular leafy vegetable with good market demand. Grows well in cool highland areas.",
@@ -199,7 +194,6 @@ export const crops: Crop[] = [
     name: "Kale",
     localName: "Sukuma Wiki",
     scientificName: "Brassica oleracea var. acephala",
-    emoji: "🥬",
     image: "/assets/images/crops/kale.png",
     category: "vegetable",
     description: "Most common vegetable in Kenya. Hardy, nutritious, and grows almost year-round.",
@@ -241,7 +235,6 @@ export const crops: Crop[] = [
     name: "Cucumber",
     localName: "Tango",
     scientificName: "Cucumis sativus",
-    emoji: "🥒",
     image: "/assets/images/crops/cucumber.png",
     category: "vegetable",
     description: "Fast-growing vegetable with high market demand. Excellent for small-scale farmers.",
@@ -283,7 +276,6 @@ export const crops: Crop[] = [
     name: "Eggplant",
     localName: "Biringanya",
     scientificName: "Solanum melongena",
-    emoji: "🍆",
     image: "/assets/images/crops/eggplant.png",
     category: "vegetable",
     description: "Warm-season crop with growing market demand. Suitable for diverse Kenyan climates.",
@@ -325,7 +317,6 @@ export const crops: Crop[] = [
     name: "Courgette (Zucchini)",
     localName: "Zukini",
     scientificName: "Cucurbita pepo",
-    emoji: "🥒",
     image: "/assets/images/crops/courgette.png",
     category: "vegetable",
     description: "Fast-maturing summer squash. Growing in popularity in urban and peri-urban markets.",
@@ -370,7 +361,6 @@ export const crops: Crop[] = [
     name: "Beans",
     localName: "Maharagwe",
     scientificName: "Phaseolus vulgaris",
-    emoji: "🫘",
     image: "/assets/images/crops/beans.png",
     category: "legume",
     description: "Important protein source and soil improver. Widely grown across Kenya.",
@@ -415,7 +405,6 @@ export const crops: Crop[] = [
     name: "Potato",
     localName: "Viazi",
     scientificName: "Solanum tuberosum",
-    emoji: "🥔",
     image: "/assets/images/crops/potato.png",
     category: "tuber",
     description: "Major food crop in highland Kenya. High demand in both rural and urban markets.",

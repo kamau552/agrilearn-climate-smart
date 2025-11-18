@@ -3,7 +3,6 @@ export interface Livestock {
   name: string;
   localName: string;
   scientificName: string;
-  emoji: string;
   image?: string;
   description: string;
   climateBadges: string[];
@@ -21,12 +20,11 @@ export interface Livestock {
 
 export const livestock: Livestock[] = [
   {
-    id: "dairy-cattle",
-    name: "Dairy Cattle",
+    id: "cow",
+    name: "Cow",
     localName: "Ng'ombe wa maziwa",
     scientificName: "Bos taurus",
-    emoji: "🐄",
-    image: "/assets/images/livestock/dairy-cattle.png",
+    image: "/assets/images/livestock/cow.png",
     description: "Primary source of milk in Kenya. Suitable breeds include Friesian, Ayrshire, and Jersey for highland areas.",
     climateBadges: ["cool-climate", "high-value"],
     difficulty: "advanced",
@@ -85,8 +83,7 @@ export const livestock: Livestock[] = [
     name: "Goats",
     localName: "Mbuzi",
     scientificName: "Capra aegagrus hircus",
-    emoji: "🐐",
-    image: "/assets/images/livestock/goat.png",
+    image: "/assets/images/livestock/goats.png",
     description: "Versatile livestock for meat, milk, and breeding. Excellent for small-scale farmers and drought-prone areas.",
     climateBadges: ["drought-tolerant", "heat-resistant", "versatile"],
     difficulty: "beginner",
@@ -145,8 +142,7 @@ export const livestock: Livestock[] = [
     name: "Indigenous Chicken",
     localName: "Kuku wa kienyeji",
     scientificName: "Gallus gallus domesticus",
-    emoji: "🐔",
-    image: "/assets/images/livestock/chicken.png",
+    image: "/assets/images/livestock/chicken2.png",
     description: "Hardy local chickens with high market demand. Disease-resistant and low maintenance.",
     climateBadges: ["drought-tolerant", "disease-resistant", "low-maintenance"],
     difficulty: "beginner",
@@ -205,8 +201,7 @@ export const livestock: Livestock[] = [
     name: "Sheep",
     localName: "Kondoo",
     scientificName: "Ovis aries",
-    emoji: "🐑",
-    image: "/assets/images/livestock/sheep.png",
+    image: "/assets/images/livestock/sheep-1.png",
     description: "Raised for meat and wool. Suitable for cooler highland regions with good pasture.",
     climateBadges: ["cool-climate", "moderate-water"],
     difficulty: "intermediate",
@@ -265,8 +260,7 @@ export const livestock: Livestock[] = [
     name: "Pigs",
     localName: "Nguruwe",
     scientificName: "Sus scrofa domesticus",
-    emoji: "🐷",
-    image: "/assets/images/livestock/pig.png",
+    image: "/assets/images/livestock/pigs.png",
     description: "Fast-growing livestock with high feed conversion efficiency. Growing market demand for pork.",
     climateBadges: ["fast-growing", "high-yield"],
     difficulty: "intermediate",
@@ -325,8 +319,7 @@ export const livestock: Livestock[] = [
     name: "Rabbits",
     localName: "Sungura",
     scientificName: "Oryctolagus cuniculus",
-    emoji: "🐰",
-    image: "/assets/images/livestock/rabbit.png",
+    image: "/assets/images/livestock/rabbits.png",
     description: "Excellent for small-scale farming. Low space requirements, fast reproduction, and quality meat.",
     climateBadges: ["low-space", "fast-breeding", "efficient"],
     difficulty: "beginner",
@@ -385,7 +378,6 @@ export const livestock: Livestock[] = [
     name: "Ducks",
     localName: "Bata",
     scientificName: "Anas platyrhynchos",
-    emoji: "🦆",
     image: "/assets/images/livestock/duck.png",
     description: "Hardy waterbirds for eggs and meat. More disease-resistant than chickens, good foragers.",
     climateBadges: ["disease-resistant", "versatile", "low-maintenance"],
