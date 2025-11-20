@@ -75,13 +75,6 @@ Comprehensive guides on:
 - Mobile-first UI
 - Accessibility-friendly components
 
-## 🎥 Demo
-
-🎬 A video walkthrough will be added soon.
-
-## 🖼️ Screenshots
-
-Screenshots coming soon.
 
 ## 🛠️ Tech Stack
 
