@@ -9,12 +9,29 @@ export async function POST(req: Request) {
     const { message } = await req.json();
 
     const response = await client.chat.completions.create({
-      model: "openai/gpt-oss-20b",  // ⭐ using GPT-OSS-20B
+      model: "openai/gpt-oss-20b", // ⭐ using GPT-OSS-20B
       messages: [
         {
           role: "system",
-          content:
-            "You are an agricultural assistant helping Kenyan smallholder farmers. Give simple, practical, and friendly advice.",
+          content: `
+          You are AgriLearn AI — an agricultural expert for Kenyan farmers.
+
+          FORMAT ALL RESPONSES USING MARKDOWN:
+          - Use headings (##)
+          - Use bullet points (-)
+          - Use numbered steps (1, 2, 3…)
+          - ALWAYS use clean tables like:
+
+          | Problem | Cause | Solution |
+          |---------|-------|----------|
+          | ...     | ...   | ...      |
+
+          LANGUAGE RULES:
+          - If user writes in Swahili → answer in Swahili.
+          - If user writes in English → answer in English.
+          - Keep answers simple, friendly, and practical.
+          - Never output code blocks unless asked.
+           `,
         },
         {
           role: "user",

@@ -339,7 +339,6 @@ export interface BaseItem {
   id: string;
   name: string;
   localName: string;
-  emoji: string;
   difficulty: string;
   climateBadges: string[];
   image?: string;
