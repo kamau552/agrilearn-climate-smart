@@ -111,7 +111,7 @@ export const crops: Crop[] = [
     name: "Tomato",
     localName: "Nyanya",
     scientificName: "Solanum lycopersicum",
-    image: "/assets/images/crops/tomato.png",
+    image: "/assets/images/crops/Tomato.png",
     category: "vegetable",
     description: "High-value vegetable crop. Suitable for both greenhouse and open field production.",
     climateBadges: ["high-value", "year-round"],
